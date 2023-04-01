@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<script>
+imgarray=new Array("h1.jpg","h2.jpg","h3.jpg","h4.jpg","17.jpg","h5.jpg","h6.jpg")
+b=0;
+function display()
+{
+	if(document.images)
+	{
+	b++;
+		if(b==imgarray.length)
+		{
+		b=0
+		}
+	document.picture.src=imgarray[b]
+	setTimeout("display()",3000)
+	}
+}
+</script>
+</head>
+<style type="text/css">
+body
+{
+	background-image: url(p1.jpg);
+	background-size: cover;
+	font-family: Arial;
+}
+ul
+{
+	margin-left: 250px;
+	padding: 0px;
+	list-style: none;
+}
+
+ul li
+{
+	float: left;
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	font-size: 25px;
+	line-height: 50px;
+	background-color: rgba(0,0,0,0.7)
+}
+ul li a
+{
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+ul li a:hover
+{
+	background-color: green;
+}
+p
+{
+	font-size: 20px;
+	color: red;
+}
+img
+{
+	width: 1000px;
+	height: 450px;
+	margin-left: 250px;
+	margin-right: 150px;
+	margin-top: 90px;
+}
+.p2
+{
+	margin-left: 100px;
+	margin-right: 100px;
+	font-size: 20px;
+}
+p3
+{
+	margin-left: 450px;
+	font-size: 40px;
+	color: red;
+}
+p4
+{
+	margin-left: 650px;
+	font-size: 30px;
+	color: purple;	
+}
+</style>
+<body onload="display()">
+
+<form id="f1" name="frm1">
+<p>
+<marquee><h1>Welcome to Magical Moment wedding mangment</h1></marquee>
+</p>
+<ul>
+<li><a>Home</a></li>
+<li><a href="login1.html">Login</a></li>
+<li><a href="gallary1.html">Gallary</a></li>
+<li><a href="feedback.html">Feedback</a></li>
+<li><a href="contact.html">Contact-us</a></li>
+</ul>
+
+<img src="h1.jpg" height=190 width=330  name="picture"/></br></br>
+
+<div class="p2">
+Here we are present to manage your every Wedding releated event. Please first Login yourself in Login page. 
+If you login already then Register in Register page. If you want to manage your event with us then book your function in our website.  
+Here we provide multiple decoration types to you. If you want to have more information about booking then after Register go to Booking information page and check the prices of different types of booking.
+Also check there food prices. These all prices is considered as 1-100 people, if number of people increases price also increase.</br></br>
+
+If you want to see some examples of decoration then go to gallary and see some images decored by our team.</br></br>
+If you send feedback us then go ot feedback and send message us. If you something unclear about our service then contact us, there are some contacts numbers are provided in contact-us page.</br></br>
+</div>
+
+<p3>
+<i>Thank You for wisiting our website.</i></br></br>
+</p3>
+
+<p4>
+<i>! Have a nice day !</i></br>
+</p4>
+</div>
+</form>
+</body>
+</html>
